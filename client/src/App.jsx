@@ -5,7 +5,7 @@ function App() {
   const [data,setData] = useState(null);
   useEffect(()=>{
     const fetchData = async()=>{
-      const fetchd = await axios.get("http://127.0.0.1:3000");
+      const fetchd = await axios.get("https://practice-1-f3g2.onrender.com");
       // console.log(fetchd)
       setData(fetchd.data.message)
     }
